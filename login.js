@@ -1,6 +1,7 @@
 let email = document.querySelector(".email")
 let pass = document.querySelector(".pass")
 let emailerr = document.querySelector(".email_alert")
+let passerr = document.querySelector(".pass_alert")
 let btn = document.querySelector(".btn")
 let emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
@@ -18,6 +19,12 @@ btn.addEventListener("click",function(){
     else{
         emailerr.innerHTML = ""
         email.style.borderBottom = ""
+    }
+    if(pass.value == ""){
+        passerr.innerHTML = "*password requred"
+        pass.style.borderBottom = "1px solid red"
+    }else{
+        passerr.innerHTML = ""
     }
 })
 

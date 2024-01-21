@@ -69,6 +69,11 @@ a{
     margin-top: 2px;
     font-size: 10px;
 }
+.pass_alert{
+    color: red;
+    margin-top: 2px;
+    font-size: 10px;
+}
 .login_site .para{
     margin-top: 15px;
     color: #fff;
